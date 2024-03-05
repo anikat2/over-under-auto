@@ -33,11 +33,11 @@
             "-funwind-tables",
             "--std=gnu++17",
             "-o",
-            "bin/main.cpp.o",
-            "src\\main.cpp"
+            "bin/autons.cpp.o",
+            "src\\autons.cpp"
         ],
         "directory": "C:\\Users\\anika\\Downloads\\anika_is_the_best-main\\anika_is_the_best-main",
-        "file": "src\\main.cpp"
+        "file": "src\\autons.cpp"
     },
     {
         "arguments": [
@@ -73,10 +73,10 @@
             "-funwind-tables",
             "--std=gnu++17",
             "-o",
-            "bin/autons.cpp.o",
-            "src\\autons.cpp"
+            "bin/main.cpp.o",
+            "src\\main.cpp"
         ],
         "directory": "C:\\Users\\anika\\Downloads\\anika_is_the_best-main\\anika_is_the_best-main",
-        "file": "src\\autons.cpp"
+        "file": "src\\main.cpp"
     }
 ]

@@ -1,5 +1,6 @@
 #include "main.h"
 
+pros::Motor motor (1, pros::E_MOTOR_GEARSET_18, false);
 /////
 // For installation, upgrading, documentations and tutorials, check out our website!
 // https://ez-robotics.github.io/EZ-Template/
@@ -53,6 +54,7 @@ void initialize()
   ez::as::initialize();
   master.rumble(".");
 
+
 }
 
 /**
@@ -91,7 +93,8 @@ void autonomous()
   chassis.drive_sensor_reset();              // Reset drive sensors to 0
   chassis.drive_brake_set(MOTOR_BRAKE_HOLD); // Set motors to hold.  This helps autonomous consistency
 
-  drive_example();
+  far_auton();
+  //drive_example();
   //turn_example();
 }
 

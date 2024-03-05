@@ -1,5 +1,6 @@
 #include "main.h"
 
+
 /////
 // For installation, upgrading, documentations and tutorials, check out our website!
 // https://ez-robotics.github.io/EZ-Template/
@@ -30,12 +31,12 @@ void default_constants() {
 ///
 // Drive Example
 ///
-void drive_example() {
-  // The first parameter is target inches
-  // The second parameter is max speed the robot will drive at
-  // The third parameter is a boolean (true or false) for enabling/disabling a slew at the start of drive motions
-  // for slew, only enable it when the drive distance is greater then the slew distance + a few inches
 
+void far_auton(){
+
+  pros::Motor top_down (1, pros::E_MOTOR_GEARSET_18, false, pros::E_MOTOR_ENCODER_COUNTS);
+
+  top_down.move(127);
   //Move forward with the pre-load
   chassis.pid_drive_set(-85_in, DRIVE_SPEED, true);
   chassis.pid_wait();
@@ -52,6 +53,12 @@ void drive_example() {
   //Turn around to face the goal
   chassis.pid_turn_set(170_deg, TURN_SPEED);
 
+}
+void drive_example() {
+  // The first parameter is target inches
+  // The second parameter is max speed the robot will drive at
+  // The third parameter is a boolean (true or false) for enabling/disabling a slew at the start of drive motions
+  // for slew, only enable it when the drive distance is greater then the slew distance + a few inches
 
 
 }
